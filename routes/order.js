@@ -132,7 +132,7 @@ router.get("/vnpay_return", function (req, res, next) {
     res.redirect(`https://dtstore-frontend.vercel.app/vnpay-status`);
   } else {
     res.cookie("code", "1");
-    res.redirect(`https://dtstore-frontend.vercel.app/vnpay-status`);
+    res.redirect(`https://dtstore-frontend.vercel.app`);
   }
 });
 
