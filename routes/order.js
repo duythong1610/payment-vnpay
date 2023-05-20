@@ -128,10 +128,12 @@ router.get("/vnpay_return", function (req, res, next) {
   }
 
   if (vnCodeStatus === 0) {
-    res.cookie("code", "0");
+    res.setHeader('X-Code', '0');
     res.redirect(`https://dtstore-frontend.vercel.app/vnpay-status`);
   } else {
-    res.cookie("code", "1");
+    // res.cookie("code", "1");
+    res.setHeader('X-Code', '1');
+
     res.redirect(`https://dtstore-frontend.vercel.app`);
   }
 });
