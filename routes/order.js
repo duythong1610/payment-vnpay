@@ -128,9 +128,9 @@ router.get("/vnpay_return", function (req, res, next) {
   }
 
   if (vnCodeStatus === 0) {
-    res.redirect(`https://dtstore-frontend.vercel.app/vnpay-payment/0`);
+    res.redirect(`https://www.october16th.store/vnpay-payment/0`);
   } else {
-    res.redirect(`https://dtstore-frontend.vercel.app`);
+    res.redirect(`https://www.october16th.store/`);
   }
 });
 
